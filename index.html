@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Personal Expense Tracker</h1>
+
+        <button id="themeBtn">⏾ Dark Mode</button>
+
+        <div class="budget-section">
+            <input type="number" id="budget" placeholder="Enter Your Budget">
+        </div>
+
+        <div class="dashboard">
+
+            <div class="card">
+                <h4>💳 Remaining</h4>
+                <h2>৳ <span id="remainingBudget">0</span></h2>
+            </div>
+
+            <div class="card">
+                <h4>📊 Expense</h4>
+                <h2>৳ <span id="total">0</span></h2>
+            </div>
+
+            <div class="card">
+                <h4>📝 Entries</h4>
+                <h2><span id="entryCount">0</span></h2>
+            </div>
+
+        </div>
+
+        <h3 id="budgetStatus">🔥 Budget Available</h3>
+
+        <div class="input-area">
+
+            <input
+                type="text"
+                id="title"
+                list="expenseSuggestions"
+                placeholder="Expense Name">
+
+            <datalist id="expenseSuggestions">
+                <option value="Food">
+                <option value="Transport">
+                <option value="Shopping">
+                <option value="Education">
+                <option value="Medicine">
+                <option value="Internet">
+                <option value="Travel">
+                <option value="Rent">
+                <option value="Others">
+            </datalist>
+
+            <input
+                type="number"
+                id="amount"
+                placeholder="Expense Amount">
+
+            <button id="addBtn">➕ Add Expense</button>
+
+        </div>
+
+        <ul id="expenseList"></ul>
+
+    </div>
+
+    <script src="renderer.js"></script>
+
+</body>
+</html>
