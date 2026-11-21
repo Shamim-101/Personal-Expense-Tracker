@@ -20,11 +20,11 @@ User Interface: Responsive Dashboard Design
 
 # 4. Main Features:
 
-Budget Management
-Expense Tracking
-Expense Deletion
-Remaining Balance Calculation
-Dark Mode Functionality
+Budget Management,
+ Expense Tracking,
+ Expense Deletion,
+ Remaining Balance Calculation,
+ Dark Mode Functionality.
 
 The application takes user input, processes expense data, updates the dashboard dynamically, and displays budget status based on spending activity.
 
